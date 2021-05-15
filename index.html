@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/52b8c19323.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <img src="Assets/img/logo.png" alt="logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World`s Biggest university</h1>
+            <p>Making websites is one of the easiest things in the world. you just need to learn HTML, CSS, <br> Javascript and you are good to go</p>
+            <a href="#" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi dolores temporibus laborum saepe provident doloremque praesentium!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in quasi non ullam corporis tempore id adipisci! Excepturi similique rerum, delectus ipsa cum tempore minima, corporis optio sed possimus deleniti?
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in quasi non ullam corporis tempore id adipisci! Excepturi similique rerum, delectus ipsa cum tempore minima, corporis optio sed possimus deleniti?
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduate</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur in quasi non ullam corporis tempore id adipisci! Excepturi similique rerum, delectus ipsa cum tempore minima, corporis optio sed possimus deleniti?
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
+
+<script>
+    var navLinks = document.getElementById('navLinks');
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
